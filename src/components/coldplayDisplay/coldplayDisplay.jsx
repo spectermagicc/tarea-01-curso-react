@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../amDisplay/amDisplay-style.css';
+import '../../assets/css/display-style.css';
 
 const ColdplayDisplay = ({name, image, year}) => (
     <div className="container-am">

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './../amDisplay/amDisplay-style.css'
+import '../../assets/css/display-style.css';
 
 const MgmtDisplay = ({name, year, image}) => (
     <div className="container-am">

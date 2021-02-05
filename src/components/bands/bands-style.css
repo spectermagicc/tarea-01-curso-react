@@ -1,0 +1,31 @@
+.container-bands {
+    display: inline-block;
+}
+
+.container-bands .bands {
+    text-align: center;
+    width: 250px;
+    height: auto;
+    margin: 0 100px;
+    border: 2px solid;
+}
+
+.container-bands .bands .title {
+    margin: 10px;
+    transition: ease-in-out .5s;
+}
+
+.container-bands .bands .img img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.container-bands .bands:hover {
+    border: 2px solid rgb(56, 56, 56);
+    cursor: pointer;
+}
+
+.container-bands .bands:hover .title {
+    font-weight: 600;
+}

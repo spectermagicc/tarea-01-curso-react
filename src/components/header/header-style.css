@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    margin: 30px;
+}
+
+.header .option {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
+
+.header .option:hover {
+    text-decoration: underline;
+}

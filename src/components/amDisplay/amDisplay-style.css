@@ -1,0 +1,16 @@
+.container-am {
+    text-align: center;
+    display: inline-block;
+    font-size: 10px;
+}
+
+.container-am .album-am {
+    width: 250px;
+    height: auto;
+    border: 1px solid black;
+    margin: 0 30px;
+}
+
+.container-am img {
+    width: 100%;
+}

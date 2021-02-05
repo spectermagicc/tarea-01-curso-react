@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Fragment} from 'react';
+import {Switch, Route} from 'react-router-dom';
+
+// components
+import Header from './components/header/header';
+import ArcticMonkeys from './components/arcticMonkeys/arcticMonkeys';
+import Coldplay from './components/coldplay/coldplay';
+import Mgmt from './components/mgmt/mgmt';
+
+
+// pages
+import MainPage from './pages/mainpage/mainPage';
+import AlbumsPage from './pages/albumspage/albumsPage';
+
+import './App.css'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return(
+    <Fragment>
+
+      <Header />
+
+      <Switch>
+
+        <Route exact path="/" component = { MainPage } />
+        <Route path="/albums-page" component = { AlbumsPage } />
+        <Route path="/arctic-monkeys" component = { ArcticMonkeys } />
+        <Route path="/coldplay" component = { Coldplay } />
+        <Route path="/mgmt" component = { Mgmt } />
+
+      </Switch>
+    </Fragment>
   );
-}
+}; 
 
 export default App;

@@ -1,0 +1,13 @@
+.container-album {
+    text-align: center;
+}
+
+.container-album .album {
+    width: 300px;
+    border: 1px solid black;
+}
+
+.container-album img {
+    width: 200px;
+    height: 200px;
+}
